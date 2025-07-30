@@ -29,6 +29,7 @@ RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
+EOF
 systemctl daemon-reload
 systemctl start dnstt-service
 systemctl enable --now dnstt-service
